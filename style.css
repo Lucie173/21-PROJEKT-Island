@@ -25,7 +25,7 @@ body {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("images/island-hlavicka.jpg");
 
-    background-size: cover, cover;
+    background-size: cover cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -51,8 +51,24 @@ body {
 }
 
 .autor {
-    
+    position: relative;
+    padding-top: 1em;
+    font-style: italic;
+    opacity: 0.7;
 }
+
+.autor::before {
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 70px;
+    border-top: 2px solid white;
+    transform: translate(-50%, 0);
+
+}
+
+
 
 /* MENU */
 
