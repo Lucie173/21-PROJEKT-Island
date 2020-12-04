@@ -13,8 +13,20 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.7;
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
 }
 
 
@@ -90,7 +102,43 @@ body {
     box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.15);
 }
 
+@media (min-width:1000px) {
+    .obsah{
+        max-width: 960px;
+        margin: -70px auto 50px auto;
+    }
+}
 
+.nadpis {
+    position: relative;
+    margin: 30px 0;
+    padding-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.nadpis::after {
+    content:" ";
+    position: absolute;
+    border-bottom: 4px solid #629edb;
+    left: -50px;
+    width: 100px;
+    bottom: 0;
+}
+
+@media  (min-width: 500px) {
+    .nadpis {
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1000px) {
+    .nadpis {
+        font-size: 36px;
+    }
+}
 /* MENU */
 
 
